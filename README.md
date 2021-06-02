@@ -17,13 +17,29 @@ The error we get when compiling:
 [!] (plugin Stylable) Error: Missing transformed css for /Users/adamzaczek/react-component-library/src/TestComponent/stylable.st.css
 ```
 
-If we comment out stylable.st.css import from
+If we comment out
+
+```text
+stylable.st.css
+```
+
+import from
 
 ```text
 src/TestComponent/TestComponent.tsx
 ```
 
 the build succeeds.
+
+## Steps to reproduce
+
+```bash
+yarn
+```
+
+```bash
+yarn build
+```
 
 ## The rest of the README
 
