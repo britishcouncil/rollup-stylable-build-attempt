@@ -1,4 +1,4 @@
-# React Component Library
+# React + Stylable + Typescript + Rollup based component library
 
 This is an attempt to build a components library on top of Rollup,
 Stylable and Typescript.
