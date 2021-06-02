@@ -27,7 +27,7 @@ export default {
     resolve(),
     commonjs(),
     typescript({ useTsconfigDeclarationDir: true }),
-    postcss(),
+    postcss({ exclude: /\.st\.css$/ }),
     stylable(),
     copy({
       targets: [
