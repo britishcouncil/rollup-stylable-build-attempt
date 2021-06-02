@@ -3,33 +3,10 @@
 This is an attempt to build a components library on top of Rollup,
 Stylable and Typescript.
 
-Base repository I used as a starting point:
-https://github.com/HarveyD/react-component-library
-
 What we want to accomplish:
 
 1. Keep folder structure as is. We need to support import from specific files.
 2. Compile .st.css to .css
-
-The error we get when compiling:
-
-```bash
-[!] (plugin Stylable) Error: Missing transformed css for /Users/adamzaczek/react-component-library/src/TestComponent/stylable.st.css
-```
-
-If we comment out
-
-```text
-stylable.st.css
-```
-
-import from
-
-```text
-src/TestComponent/TestComponent.tsx
-```
-
-the build succeeds.
 
 ## Steps to reproduce
 
