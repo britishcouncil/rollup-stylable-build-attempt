@@ -8,6 +8,7 @@ function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'defau
 
 var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
 
+// import "./otherStyles.st.css";
 var TestComponent = function (_a) {
     var theme = _a.theme;
     return (React__default['default'].createElement("div", { "data-testid": "test-component", className: "test-component test-component-" + theme },

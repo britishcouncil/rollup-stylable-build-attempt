@@ -1,5 +1,6 @@
 import React from 'react';
 
+// import "./otherStyles.st.css";
 var TestComponent = function (_a) {
     var theme = _a.theme;
     return (React.createElement("div", { "data-testid": "test-component", className: "test-component test-component-" + theme },
