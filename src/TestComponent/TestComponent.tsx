@@ -4,6 +4,7 @@ import { TestComponentProps } from "./TestComponent.types";
 
 // import "./TestComponent.scss";
 import "./stylable.st.css";
+import "./otherStyles.st.css";
 
 const TestComponent: React.FC<TestComponentProps> = ({ theme }) => (
   <div

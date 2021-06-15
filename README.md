@@ -8,7 +8,7 @@ What we want to accomplish:
 1. Keep folder structure as is. We need to support import from specific files.
 2. Compile .st.css to .css
 
-## Steps to reproduce
+## Steps to build
 
 ```bash
 yarn
