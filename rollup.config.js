@@ -5,6 +5,7 @@ import typescript from "rollup-plugin-typescript2";
 import postcss from "rollup-plugin-postcss";
 import copy from "rollup-plugin-copy";
 import stylable from "@stylable/rollup-plugin";
+import scss from "rollup-plugin-scss";
 
 const packageJson = require("./package.json");
 
@@ -27,21 +28,22 @@ export default {
     resolve(),
     commonjs(),
     typescript({ useTsconfigDeclarationDir: true }),
+    scss(),
     postcss({ exclude: /\.st\.css$/ }),
     stylable(),
-    copy({
-      targets: [
-        {
-          src: "src/variables.scss",
-          dest: "build",
-          rename: "variables.scss",
-        },
-        {
-          src: "src/typography.scss",
-          dest: "build",
-          rename: "typography.scss",
-        },
-      ],
-    }),
+    // copy({
+    //   targets: [
+    //     {
+    //       src: "src/variables.scss",
+    //       dest: "build",
+    //       rename: "variables.scss",
+    //     },
+    //     {
+    //       src: "src/typography.scss",
+    //       dest: "build",
+    //       rename: "typography.scss",
+    //     },
+    //   ],
+    // }),
   ],
 };

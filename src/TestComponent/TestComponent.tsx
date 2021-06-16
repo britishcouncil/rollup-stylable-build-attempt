@@ -2,7 +2,7 @@ import React from "react";
 
 import { TestComponentProps } from "./TestComponent.types";
 
-// import "./TestComponent.scss";
+import "./TestComponent.scss";
 import "./stylable.st.css";
 import "./otherStyles.st.css";
 
